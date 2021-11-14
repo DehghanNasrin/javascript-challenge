@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>UFO Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>  
+  
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"
+              >UFO Sightings
+              <img class="nav-ufo" src="static/images/ufo.svg" />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero text-center">
+        <h1>UFO Sightings</h1>
+        <p>The Truth is Out There</p>
+      </div>
+      <div class="container">
+        <div class="row margin-top-50">
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading text-center">Filter Search</div>
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group text-center btn-block">
+                      <ul class="list-group" id="filters">
+                        <li class="filter list-group-item text-center btn-block">
+                          <label for="date ">Enter a Date</label>
+                          <input
+                            class="form-control text-center btn-block"
+                            id="input"
+                            type="text"
+                            placeholder="1/11/2011"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                    <button
+                      id="filter-btn"
+                      type="button"
+                      class="btn btn-primary text-center btn-block"
+                    >
+                      Filter Table
+                    </button>
+                    <button
+                      id="reload-filter"
+                      type="button"                      
+                      class="btn btn-primary text-center btn-block"
+                    >
+                      Remove Filter
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-10">
+            <div id="table-area" class="">
+              <table id="ufo-table" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="table-head">Date</th>
+                    <th class="table-head">City</th>
+                    <th class="table-head">State</th>
+                    <th class="table-head">Country</th>
+                    <th class="table-head">Shape</th>
+                    <th class="table-head">Duration</th>
+                    <th class="table-head">Comments</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <span class="bottom">UFO Sightings</span>
+      </footer>
+    </div>    
+    <script src="../Modules/data.js"></script>
+    <script type="module" src="../../Modules/app.js"></script>
+  </body>
+</html>
