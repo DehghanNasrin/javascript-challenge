@@ -1,6 +1,6 @@
 # JavaScript and DOM Manipulation
 
-Creating a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. We only use pure JavaScript, HTML, and CSS, and D3.js on our web pages.
+Creating a table dynamically based upon a [dataset we provide](/Modules/data.js). We also need to allow our users to filter the table data for specific values. We only use pure JavaScript, HTML, and CSS, and D3.js on our web pages.
 
 ### Level 1: Automatic Table and Date Search
 
