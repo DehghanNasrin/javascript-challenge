@@ -20,4 +20,7 @@ Creating a table dynamically based upon a [dataset we provide](/Modules/data.js)
   4. `country`
   5. `shape`
 
-* note: Instead of duplicating all the code from part one, a module is created to follow the DRY principle, so I have created a module called module.js and app.js followed by data.js, which is an object array of data to be loaded on the page.
+* note1: Instead of duplicating all the code from part one, a module is created to follow the DRY principle, so I have created a module called module.js and app.js followed by data.js, which is an object array of data to be loaded on the page.
+
+* note2: In order to run the html file directly, you can now go to the HTML Directly folder and open index.html in a browser.
+* note3: If you install the live server extension on VS Code, you can click on "go live" and see the result.
